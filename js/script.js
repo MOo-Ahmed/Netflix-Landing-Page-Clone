@@ -3,14 +3,16 @@ const tabContentItems = document.querySelectorAll('.tab-content-item');
 
 // Select tab content item
 function selectItem() {
-    alert("I got here ");
 	// Remove all show and border classes
 	removeBorder();
 	removeShow();
 	// Add border to current tab item
 	this.classList.add('tab-border');
 	// Grab content item from DOM
-	const tabContentItem = document.querySelector(`#${this.id}-content`);
+	var MyID = "#".concat(this.id) ;
+	var ID = MyID.concat("-content");
+	alert(ID);
+	const tabContentItem = document.querySelector(ID);
 	// Add show class
 	tabContentItem.classList.add('show');
 }

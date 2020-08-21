@@ -11,7 +11,6 @@ function selectItem() {
 	// Grab content item from DOM
 	var MyID = "#".concat(this.id) ;
 	var ID = MyID.concat("-content");
-	alert(ID);
 	const tabContentItem = document.querySelector(ID);
 	// Add show class
 	tabContentItem.classList.add('show');
